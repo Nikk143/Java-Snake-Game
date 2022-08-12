@@ -158,10 +158,19 @@ public class Panels extends JPanel implements ActionListener {
         FontMetrics metrics = getFontMetrics(g.getFont());
         g.drawString("Game Over", (SCREEN_WIDTH - metrics.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
 
+        //Score Display
         g.setColor(Color.red);
         g.setFont(new Font("Poppins", Font.BOLD, 30));
         FontMetrics Score = getFontMetrics(g.getFont());
         g.drawString("Score: " + applesEaten, (SCREEN_WIDTH - Score.stringWidth("Score: " + applesEaten))/2, g.getFont().getSize());
+
+//        SnakeGame.restartButton.setVisible(true);
+//        SnakeGame.restartButton.setBounds(200, 200, 100, 50);
+//        SnakeGame.restartButton.setText("Play Again");
+//        SnakeGame.restartButton.setBackground(new Color(212, 0, 11));
+//        SnakeGame.restartButton.setFont(new Font("Poppins", Font.BOLD, 15));
+//        SnakeGame.restartButton.setBorder(BorderFactory.createMatteBorder(2, 2, 2, 2, Color.black));
+//        SnakeGame.restartButton.addActionListener(e -> System.out.println("Play Again"));
     }
 
     @Override
